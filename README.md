@@ -108,6 +108,21 @@ The MQ-135 works with a 5V power supply, which you can provide directly from the
 7. Arduino Code to Read MQ-135 Sensor:
 Now that the sensor is connected, add an Arduino program to read the data from the sensor.
 
+# Boolean Logic in the Code:
+To use Boolean logic with the MQ-135 gas sensor on an Arduino, you'll typically rely on the digital output (DOUT) to determine whether the gas concentration exceeds a certain threshold. You can then use Boolean logic to trigger actions like turning on alarms, controlling fans, or activating air purifiers.
+
+Boolean logic involves using TRUE (1) and FALSE (0) to make decisions.
+The digital output (DOUT) from the MQ-135 is either HIGH (1) or LOW (0), depending on whether the gas concentration exceeds a predefined threshold.
+
+If the gas concentration exceeds the threshold, the digital output (DOUT) will be HIGH (1), and you can perform an action.
+If the gas concentration is below the threshold, the digital output (DOUT) will be LOW (0), and you can perform a different action.
+Steps to Use Boolean Logic with MQ-135:
+Set the Digital Pin for DOUT: The digital output (DOUT) will be connected to a digital pin on your Arduino, and you’ll read this pin to check whether the gas concentration exceeds the threshold.
+
+Define the Actions: Based on the state of the digital output (either HIGH or LOW), use Boolean logic to control actions like triggering alarms or controlling devices.
+
+Serial.println(): Prints messages to the Serial Monitor for debugging and viewing the status of gas concentration.
+
 # Progress Throughout Project Link To Docs:
 https://docs.google.com/document/d/1ycSrD5aEMXP8b4iOWRAaYxe6nc4VWNXuJbO2A38YOls/edit?tab=t.0 
 
