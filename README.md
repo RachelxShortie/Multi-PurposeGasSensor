@@ -36,3 +36,40 @@ The sensor needs a warm-up period before it gives accurate readings.
 Over time, the sensor can degrade, so it's important to replace it as part of routine maintenance.
 ## Conclusion:
 The MQ-135 is a versatile and cost-effective gas sensor commonly used for detecting air pollutants. It is a popular choice in environmental monitoring, air quality testing, and smart home systems. However, its cross-sensitivity and need for calibration can be challenges that users need to manage carefully.
+
+
+# Project Code
+// Define the pins for the MQ-135 sensor and the LED
+#define MQ135_PIN A0  // Analog pin for MQ-135 output
+#define LED_PIN 2     // LED pin
+
+void setup() {
+  // Start serial communication for debugging
+  Serial.begin(9600);
+
+  // Set the LED pin as OUTPUT
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  // Read the analog value from the MQ-135 sensor (0-1023 range)
+  int sensorValue = analogRead(MQ135_PIN);
+
+  // Print the sensor value to the Serial Monitor for debugging
+  Serial.print("Sensor Value: ");
+  Serial.println(sensorValue);
+
+  // Control the LED based on the sensor value
+  if (sensorValue < 330) {  // Good air quality
+    digitalWrite(LED_PIN, LOW);  // Turn OFF the LED
+    Serial.println("Good air quality: LED OFF");
+  }
+  else {  // Poor air quality
+    digitalWrite(LED_PIN, HIGH); // Turn ON the LED
+    Serial.println("Poor air quality: LED ON");
+  }
+
+  delay(1000);  // Wait for 1 second before the next reading
+}
+
+
