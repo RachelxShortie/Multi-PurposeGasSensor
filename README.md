@@ -72,4 +72,7 @@ void loop() {
   delay(1000);  // Wait for 1 second before the next reading
 }
 
+# Progress Throughout Project Link To Docs:
+https://docs.google.com/document/d/1ycSrD5aEMXP8b4iOWRAaYxe6nc4VWNXuJbO2A38YOls/edit?tab=t.0 
+
 
