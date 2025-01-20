@@ -16,7 +16,7 @@ It offers both an analog output (which varies with gas concentration) and a digi
 31Ω (depending on the model).
 ## Preheating Time: 
 Around 24 to 48 hours for calibration.
-## Applications:
+# Applications:
 ## Air Quality Monitoring: 
 The MQ-135 is often used in air quality monitors to assess pollution levels, particularly in urban environments or industrial areas.
 ## Air Purifiers: 
