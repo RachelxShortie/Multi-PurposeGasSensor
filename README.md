@@ -72,7 +72,46 @@ void loop() {
   delay(1000);  // Wait for 1 second before the next reading
 }
 
+
+## Gases The Sensor Can Detect: 
+The MQ-135 Gas Sensor can identify dangerous gases and smoke, including ammonia (NH3), sulfur (S), benzene (C6H6), and CO2. This MQ135 sensor, like the others in the MQ series of gas sensors, has a pin for both digital and analog output.
+
+1. Components Needed:
+- MQ-135 Gas Sensor
+- Arduino Board (e.g., Arduino Uno, Nano, etc.)
+- Jumper wires
+- Breadboard (optional, but helpful)
+
+2. Pinout of the MQ-135 Sensor:
+The MQ-135 sensor has 4 pins:
+VCC (Pin 1): Power supply (5V).
+GND (Pin 2): Ground.
+AOUT (Pin 3): Analog output (provides a varying voltage depending on gas concentration).
+DOUT (Pin 4): Digital output (gives a binary signal, HIGH or LOW, based on a set threshold).
+
+4. Wiring the MQ-135 Sensor to Arduino:
+For Analog Output (AOUT):
+VCC → 5V on Arduino
+GND → GND on Arduino
+AOUT → A0 (analog input pin) on Arduino
+DOUT → Leave unconnected or connect to a digital pin to use the digital output.
+
+For Digital Output (DOUT):
+VCC → 5V on Arduino
+GND → GND on Arduino
+AOUT → Unconnected (if using digital output only)
+DOUT → D2 (or any available digital pin on Arduino)
+
+6. Powering the Sensor:
+The MQ-135 works with a 5V power supply, which you can provide directly from the 5V pin on the Arduino. However, during operation, the sensor's heater may cause it to draw significant current, especially when warming up. It’s a good practice to allow it to warm up for 24-48 hours in clean air for stable readings.
+
+7. Arduino Code to Read MQ-135 Sensor:
+Now that the sensor is connected, add an Arduino program to read the data from the sensor.
+
 # Progress Throughout Project Link To Docs:
 https://docs.google.com/document/d/1ycSrD5aEMXP8b4iOWRAaYxe6nc4VWNXuJbO2A38YOls/edit?tab=t.0 
+
+
+
 
 
