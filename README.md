@@ -1,4 +1,4 @@
-#### Multi-PurposeGasSensor
+# Multi-PurposeGasSensor
 The MQ-135 is a gas sensor, specifically designed to detect a range of air pollutants. It’s part of the MQ series, produced by the Chinese company Hanwei Electronics. The MQ sensors are widely used in various air quality monitoring applications, including home air quality systems, industrial monitoring, and environmental research.
 
 # Key Features:
